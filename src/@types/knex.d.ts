@@ -11,9 +11,11 @@ declare module 'knex/types/tables' {
 
     meals: {
       id: string
+      session_id: string
       name: string
       description: string | null
       isInDiet: 'in' | 'out'
+      eated_at: string
       created_at: string
     }
   }
