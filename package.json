@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "npx tsx ./src/server.ts",
+    "dev": "npx tsx watch ./src/server.ts",
     "lint": "eslint src --ext .ts --fix",
     "knex": "node --import tsx ./node_modules/.bin/knex"
   },
@@ -12,6 +12,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@fastify/cookie": "^11.0.2",
     "dotenv": "^16.4.7",
     "fastify": "^5.2.1",
     "knex": "^3.1.0",
